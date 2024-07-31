@@ -1,3 +1,4 @@
+/* Reset some default styles */
 * {
     font-family: "Vollkorn", serif;
 }
@@ -9,80 +10,134 @@ header {
     width: 100%;
     z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
-header span{
+
+
+
+header {
+    background-color: #A91D3A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+main { 
+    margin: 20px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    main {
+        padding-top: 10px; /* Ajusta según la altura del header en pantallas pequeñas */
+    }
+}
+
+
+header span {
     color: #FCF5ED;
 }
-.nav-item a{
-    color:  #FCF5ED;
+
+.nav-item a {
+    color: #FCF5ED;
 }
+
 /*El orden recomendado es LoVe HAte, que significa :link, :visited, :hover, :active. */
 /*link visitado*/
-.nav-item a:visited{
+.nav-item a:visited {
     color: #FCF5ED;
 }
-.nav-item a:hover{
-    color:#F4BF96
+
+.nav-item a:hover {
+    color: #F4BF96;
 }
 
 /* Enlace activo (al hacer clic si no esta presionado no cambia) */
 .nav-item a:active {
     color: rgb(255, 226, 63); /* Color del enlace cuando se hace clic */
-  }
-#nav-button{
-    background-color:#D98F9D;
 }
-#primerboton{
+
+#nav-button {
+    background-color: #D98F9D;
+}
+
+#primerboton {
     background-color: #8C1F33;
-    border-color:#D98F9D;
+    border-color: #D98F9D;
 }
+
 #fotomia {
     border-radius: 300px 300px 50px;
     width: 160px;
     border: solid; /* solid, double, varias propiedades */
     padding: 5px;
     border-color: #A91D3A;
-   
-}
-#presentacion{
-    text-align: justify ;
 }
 
+#presentacion {
+    text-align: justify;
+}
+
+
+/*CON MARQUEE*/
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    /*background: #f0f0f0; /* Fondo para visualizar el área del marquee, opcional */
+  }
+  .marquee-text {
+    color:black;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee-up 8s linear infinite;
+  }
+  @keyframes marquee-up {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+/*HABILIDADES*/
 li {
     list-style: none;
 }
+
 #habilidad {
-    color : #0D0D0D;
-    font-size:20px;
+    color: #0D0D0D;
+    font-size: 20px;
     line-height: 1;
-   
     font-weight: bolder;
 }
+
 #html {
-    color : #0D0D0D;
-    font-size:30px;
+    color: #0D0D0D;
+    font-size: 30px;
     font-weight: bolder;
 }
-#hard {
-    background-color: antiquewhite;
-}
 
 #hard {
     background-color: antiquewhite;
 }
 
-#tabla1{
-background-color: #A91D3A;
-text-align: center;
-color:azure
+#tabla1 {
+    background-color: #A91D3A;
+    text-align: center;
+    color: azure;
 }
+
 #soft {
     background-color: #FFCDBF;
 }
-#idiomas{
+
+#idiomas {
     background-color: #F4BF96;
 }
 
 /* Estilos para la tarjeta */
+
+
+  #transpa{
+    background: transparent; 
+  }
 .card {
     position: relative;
     overflow: hidden;
@@ -91,8 +146,10 @@ color:azure
 
 /* Estilos para la imagen dentro de la tarjeta */
 .card-img-top {
-    border-radius: 15px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */
     transition: opacity 0.3s ease-in-out; /* Transición para la opacidad */
+    width: fit-content;
+    height: fit-content;
 }
 
 /* Efecto de opacidad en la imagen al pasar el cursor sobre la tarjeta */
@@ -108,5 +165,97 @@ color:azure
 
 /* Opcional: sombra en la tarjeta */
 .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px #A91D3A;
+    color: #dd405d;
+}
+
+.card-body h4 {
+    color: #A91D3A;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text {
+    height: 78px;
+}
+
+#clon-pinterest {
+    height: 120px;
+}
+
+#primer-pag {
+    height: 140px;
+}
+
+#contact_abajo{
+
+   font-size: 8rem;
+   color:#8C1F33
+  }
+  #boton_contacto {
+    color:#A91D3A;
+    background-color:#F4BF96;
+    border-color: #A91D3A;
+}
+
+  
+/*Testimonios*/
+#carouselExampleInterval {
+    background: rgb(255,183,84);
+    background: linear-gradient(106deg, rgba(255,183,84,0.7262113764044944) 37%, rgba(255,0,67,0.6616046348314606) 72%);
+    padding: 2rem 0; /* Espaciado superior e inferior de la sección */
+  }
+  
+  .carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+.carousel-img {
+    width: 180px;
+    margin-bottom: 1rem; /* Añade espacio entre la imagen y el texto */
+  }
+  
+  
+  
+  .carousel-text {
+    font-size: 1.125rem; /* Tamaño de la fuente del texto ligeramente más grande */
+    font-weight: bolder;
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #000; /* Color del texto (negro) */
+    max-width: 80%; /* Limita el ancho máximo del texto */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    padding: 0 2rem; /* Añade más espaciado interno horizontal para el texto */
+  }
+  
+  
+/*PIE DE PÁGINA*/
+.container {
+    flex: 1;
+  }
+  
+  .footer {
+    background-color: #A91D3A; /* Cambia esto según tu diseño */
+    color: #fff; /* Cambia esto según tu diseño */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer .nav {
+    margin-bottom: 10px;
+  }
+  
+.footer p a{
+    color:#FCF5ED;
+    text-decoration: none;
+}
+.bi{
+   font-size: 30px;
 }

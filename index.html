@@ -5,7 +5,12 @@ https://getbootstrap.com/docs/5.3/components/navbar/
 
 
 
-https://getbootstrap.com/docs/5.3/examples/features/-->
+https://getbootstrap.com/docs/5.3/examples/features/
+
+
+
+PARA MIS TESTIMONIOS 
+https://www.flaticon.es/icono-gratis/nina_4202840?term=user&page=1&position=43&origin=search&related_id=4202840-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,10 +30,21 @@ https://getbootstrap.com/docs/5.3/examples/features/-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!--PARA PONER LOS ICONOS CHIQUITOS DE NUESTRA BARRA DE BUSQUEDA-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    
-    
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
+  <!--ICONOS DE BOOTSRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--MI ICONO DE ARRIBITA-->
+  <link rel="shortcut icon" href="/assets/bookmark-heart.svg">
+
+  <!--PONGAMOS LAS LIBRERIAS DEL CARRUSEL-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
   <title>Portafolio</title>
 </head>
 
@@ -38,12 +54,12 @@ https://getbootstrap.com/docs/5.3/examples/features/-->
       <svg class="bi me-2" width="40" height="32">
         <use xlink:href="#bootstrap"></use>
       </svg>
-      <span class="fs-4">María Itzel Chávez Herrera</span>
+      <span class="fs-5">María Itzel Chávez Herrera</span>
     </a>
-
     <!-- Barra de navegación -->
     <ul class="nav nav-pills">
-      <li class="nav-item"><a id="nav-button" href="#primero" class="nav-link active" aria-current="page">Inicio</a></li>
+      <li class="nav-item"><a id="nav-button" href="#primero" class="nav-link active" aria-current="page">Inicio</a>
+      </li>
       <li class="nav-item"><a href="#segundo" class="nav-link">Habilidades</a></li>
       <li class="nav-item"><a href="#tercera" class="nav-link">Proyectos</a></li>
       <li class="nav-item"><a href="#testimonio" class="nav-link">Testimonios</a></li>
@@ -52,28 +68,33 @@ https://getbootstrap.com/docs/5.3/examples/features/-->
   </header>
   <main>
     <!--Primera Sección-->
-    <section id= "primero" class="sobre-mi">
+    <section id="primero" class="sobre-mi">
       <div class="px-4 py-5 my-5 text-center">
-        <img id="fotomia"class="d-block mx-auto mb-4" src="assets/mia.jpeg" alt=""> <!--w72 h57-->
+        <img id="fotomia" class="d-block mx-auto mb-4" src="assets/mia.jpeg" alt=""> <!--w72 h57-->
         <h1 class="display-5 fw-bold text-body-emphasis">María Itzel Chávez Herrera</h1>
-        <h2>Lic. en MAC | Desarrolladora Frontend Jr</h2>
-        <br>
-      <div id= "presentacion" class="col-lg-8 mx-auto">
-        <p class="lead mb-4">
-          Soy María Itzel Chávez Herrera, tengo 22 años, soy egresada de la carrera Matemáticas Aplicadas y Computación en la Facultad de Estudios Superiores Acatlán (UNAM).
-          Durante mi estancia en la universidad mi área de interés fue todo lo relacionado con Bases de Datos y desarrollo frontend.
-          <br><br>
-          Cursé un diplomado de Administración de Base de Datos, y ahora me he enfocado a adquirir y reforzar mis conocimientos en el desarrollo frontend y el análisis de datos.
-          <br><br>
-          Me apasiona bastante el colaborar en grandes proyectos y seguir reforzando y aprendiendo nuevas tecnologías y técnicas que me ayuden a optimizar y automatizar procesos y desarrollos.
-          <br><br>
-          Soy una persona pro activa y mi meta es entrar a IBM como DBA y llevar toda la administración de esta área.
-        </p>
-        <div  class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button id="primerboton" type="button" class="btn btn-primary btn-lg px-4 gap-3">Mi CV</button>
-          <!--<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
+        <div class="marquee-container col-lg-6 mx-auto">
+          <h2 class="marquee-text">Lic. en MAC | Desarrolladora Frontend Jr</h2>
         </div>
-      </div>
+        <div id="presentacion" class="col-lg-8 mx-auto">
+          <p class="lead mb-4">
+            Soy María Itzel Chávez Herrera, tengo 22 años, soy egresada de la carrera Matemáticas Aplicadas y
+            Computación en la Facultad de Estudios Superiores Acatlán (UNAM).
+            Durante mi estancia en la universidad mi área de interés fue todo lo relacionado con Bases de Datos y
+            desarrollo frontend.
+            <br><br>
+            Cursé un diplomado de Administración de Base de Datos, y ahora me he enfocado a adquirir y reforzar mis
+            conocimientos en el desarrollo frontend y el análisis de datos.
+            <br><br>
+            Me apasiona bastante el colaborar en grandes proyectos y seguir reforzando y aprendiendo nuevas tecnologías
+            y técnicas que me ayuden a optimizar y automatizar procesos y desarrollos.
+            <br><br>
+            Soy una persona pro activa y mi meta es entrar a IBM como DBA y llevar toda la administración de esta área.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button id="primerboton" type="button" class="btn btn-primary btn-lg px-4 gap-3">Mi CV</button>
+            <!--<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
+          </div>
+        </div>
       </div>
     </section>
     <!--Segunda sección MIA-->
@@ -81,364 +102,388 @@ https://getbootstrap.com/docs/5.3/examples/features/-->
       <div class="container">
         <h3 id="hab">Habilidades</h3>
         <div class="row">
-            <div id="hard" class="col-6">
-              <h3 id="tabla1">Hard Skills</h3>
-              <li>
-                <span id= "habilidad" class="material-symbols-outlined">
-               database
-               </span> 
-                 Base de Datos (MySQL, ORACLE, MariaDB,SQL Server) 
-               </li>
-  
-               <li>
-                 <span id= "habilidad" class="material-symbols-outlined">
-                   check_circle
-                 </span> 
-                 Resolución de problemas
-               </li>
-               <li>
-                 <span id="habilidad" class="material-symbols-outlined">
-                   sync_saved_locally
-                 </span>
-                   Manejo Git, Github, Gitlab para control de versiones
-                 </li>
-                 <li>
-                   <span id="habilidad" class="material-symbols-outlined">
-                     code_blocks
-                     </span>
-                   Python
-                 </li>
-                 <li>
-                   <span id="habilidad" class="material-symbols-outlined">
-                     code_blocks
-                     </span>
-                   Swift
-  
-                 </li>
-               <li>
-                 <span id="habilidades" class="material-symbols-outlined">
-                   groups
-                   </span>
-                 SCRUM
-               </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 code_blocks
-                 </span>
-               Java
-             </li>
-             <li>
-               <span id="habilidad"class="material-symbols-outlined">
-                 style
-                 </span>
-               Framework(Bootstrap)
-             </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 search_insights
-                 </span>
-               Tableu, Looker Studio
-             </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 laptop_windows
-                 </span>
-               Herramientas Office
-             </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 javascript
-                 </span>
-               JavaScript
-             </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 code_blocks
-                 </span>
-               Linux
-             </li>
-             <li>
-               <span id="html"class="material-symbols-outlined">
-                 html
-                 </span>
-                 <span id="html" class="material-symbols-outlined">
-                   css
-                   </span>
-                   <span id="html" class="material-symbols-outlined">
-                     php
-                     </span>
-             </li>
-             <li>
-               <span id="habilidad" class="material-symbols-outlined">
-                 code_blocks
-                 </span>
-               C, C++
-             </li>
-            </div> 
-            <div id="soft" class = "col-6">
-              <h3 id="tabla1"> Soft Skills</h3>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  group_work
-                  </span>
-                Trabajo en equipo
-              </li>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  checklist
-                  </span>
-                Responsabilidad
-              </li>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  lightbulb
-                  </span>
-                Proactividad (Proactiva)
-              </li>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  work
-                  </span>
-                Adaptabilidad
-              </li>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  timer
-                  </span>
-                Trabajo bajo presión
-              </li>
-              <li>
-                <span id="habilidad" class="material-symbols-outlined">
-                  cognition
-                  </span>
-                Creatividad 
-              </li>
-              <li> 
-                <span id="habilidad" class="material-symbols-outlined">
-                  cognition
-                  </span>
-              Pensamiento Crítico 
+          <div id="hard" class="col-6">
+            <h3 id="tabla1">Hard Skills</h3>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                database
+              </span>
+              Base de Datos (MySQL, ORACLE, MariaDB,SQL Server)
             </li>
-              <li> 
-                <span id="habilidad" class="material-symbols-outlined">
-                  playlist_add_check_circle
-                  </span>
-                Organización y planificación 
-              </li>
-              <li> 
-                <span id="habilidad" class="material-symbols-outlined">
-                  accessibility_new
-                  </span>
-                Excelente actitud frente a nuevos retos 
-              </li>
-            </div>
+
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                check_circle
+              </span>
+              Resolución de problemas
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                sync_saved_locally
+              </span>
+              Manejo Git, Github, Gitlab para control de versiones
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                code_blocks
+              </span>
+              Python
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                code_blocks
+              </span>
+              Swift
+
+            </li>
+            <li>
+              <span id="habilidades" class="material-symbols-outlined">
+                groups
+              </span>
+              SCRUM
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                code_blocks
+              </span>
+              Java
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                style
+              </span>
+              Framework(Bootstrap)
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                search_insights
+              </span>
+              Tableu, Looker Studio
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                laptop_windows
+              </span>
+              Herramientas Office
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                javascript
+              </span>
+              JavaScript
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                code_blocks
+              </span>
+              Linux
+            </li>
+            <li>
+              <span id="html" class="material-symbols-outlined">
+                html
+              </span>
+              <span id="html" class="material-symbols-outlined">
+                css
+              </span>
+              <span id="html" class="material-symbols-outlined">
+                php
+              </span>
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                code_blocks
+              </span>
+              C, C++
+            </li>
+          </div>
+          <div id="soft" class="col-6">
+            <h3 id="tabla1"> Soft Skills</h3>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                group_work
+              </span>
+              Trabajo en equipo
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                checklist
+              </span>
+              Responsabilidad
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                lightbulb
+              </span>
+              Proactividad (Proactiva)
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                work
+              </span>
+              Adaptabilidad
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                timer
+              </span>
+              Trabajo bajo presión
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                cognition
+              </span>
+              Creatividad
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                cognition
+              </span>
+              Pensamiento Crítico
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                playlist_add_check_circle
+              </span>
+              Organización y planificación
+            </li>
+            <li>
+              <span id="habilidad" class="material-symbols-outlined">
+                accessibility_new
+              </span>
+              Excelente actitud frente a nuevos retos
+            </li>
+          </div>
           <div id="idiomas" class="col-12">
             <h3 id="tabla1">Idiomas</h3>
             <li>
               <span id="habilidad" class="material-symbols-outlined">
                 language_spanish
-                </span> 
-              Español: Nativo </li>
-            <li> 
+              </span>
+              Español: Nativo
+            </li>
+            <li>
               <span id="habilidad" class="material-symbols-outlined">
                 language_us
-                </span>
-              Inglés: Intermedio B1 </li>
+              </span>
+              Inglés: Intermedio B1
+            </li>
           </div>
         </div>
-    </div>    
+      </div>
     </section>
-  
+
 
     <!--Tercera sección MIA -->
     <section id="tercera" class="proyectos">
-      <div class="album py-5 bg-light">
+      <div id="transpa" class="album py-5">
         <div class="container">
           <div class="row">
             <h3>Proyectos</h3>
             <div class="col-md-4">
-              <a href="https://pinterest-clone-ten-kappa.vercel.app" class="card-link">
+              <a href="https://pinterest-clone-ten-kappa.vercel.app" target="_black" class="card-link">
                 <div class="card mb-4 box-shadow">
                   <img class="card-img-top" src="assets/CLON.JPG" alt="Clon Pinterest">
-                  <div class="card-body">
+                  <div id="clon-pinterest" class="card-body">
                     <h4>Clon Pinterest</h4>
                     <p class="card-text">Se recreó la página de Pinterest en HTML poniendo estilos con CSS.</p>
                   </div>
                 </div>
               </a>
             </div>
-    
+
             <div class="col-md-4">
-              <a href="https://www.tusitio.com/proyecto-2" class="card-link">
+              <a href="https://colab.research.google.com/drive/1nED1i4P7YT71AjB5zSreSU3sl1ttmnfo?usp=sharing" target="_black"
+                class="card-link">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="assets/primer.JPG" alt="PrimerPagina">
+                  <img class="card-img-top" src="assets/mapa-calor.png" alt="mapa-calor">
                   <div class="card-body">
-                    <h4>PRIMER PÁGINA</h4>
-                    <p class="card-text"> Realice mi primer página con html sin que sea responsiva acerca de un pokemon. </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
+                    <h4>Análisis de Banco</h4>
+                    <p class="card-text">Construir un modelo de machine learning que sea capaz de evaluar la
+                      probabilidad de incumplimiento crediticio de sus clientes.</p>
                   </div>
                 </div>
               </a>
             </div>
-    
+
+            <div class="col-md-4">
+              <a href="https://primer-pagina-pi.vercel.app" target="_black" class="card-link">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="assets/primer.JPG" alt="Primera">
+                  <div id="primer-pag" class="card-body">
+                    <h4>Primer Página</h4>
+                    <p class="card-text">Realice mi primer página con html y css sin que sea responsiva acerca de un
+                      pokemon. </p>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <!-- Agrega más tarjetas según sea necesario -->
-    
+
           </div>
         </div>
       </div>
     </section>
-    
+
 
     <!--Cuarta sección-->
+    <h3 class="container my-5">Testimonios</h3>
     <section id="testimonio" class="testimonios">
-   
-
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <div class="carousel-content">
+              <img src="/assets/t3.png" class="carousel-img" alt="Testimonio1">
+              <p class="carousel-text">Mary trabaja muy bien en equipo, aprende rápido todo lo que se propone, sus conocimientos le permitirán crecimiento profesional en cualquier sector que quiera dedicarse.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <div class="carousel-content">
+              <img src="/assets/t2.png" class="carousel-img" alt="Testimonio2">
+              <p class="carousel-text">Itzel es una joven bastante activa, muy responsable y trabajadora que demuestra una notable pasión y compromiso con las tareas asignadas. Su tendencia hacia la innovación en los procesos permite una significativa automatización y mejora continua, contribuyendo notablemente a la eficiencia y efectividad de los procesos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <img src="/assets/t1.png" class="carousel-img" alt="Testimonio3">
+              <p class="carousel-text">La señorita María demuestra un alto nivel de responsabilidad en todas las actividades asignadas. Siempre cumple con los plazos establecidos y sigue cuidadosamente las instrucciones proporcionadas. Además, sus reportes se distinguen por una excelente presentación.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </section>
+    
+    
+    
+    
+    
+    
 
     <!--Quinta sección-->
     <section id="contact" class="contacto">
       <div class="container my-5">
-        <div class="p-5 text-center bg-body-tertiary rounded-3">
-          <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <h1 class="text-body-emphasis">Jumbotron with icon</h1>
-          <p class="col-lg-8 mx-auto fs-5 text-muted">
-            This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a
-            responsive <code>.col-*</code> class, and a customized call to action.
+        <h3>Contacto</h3>
+        <div class="contact-box text-center">
+          <i id="contact_abajo" class="bi bi-envelope"></i>
+          <p class="fs-5 text-muted">
+            Contáctame para iniciar un proyecto juntos
           </p>
-          <div class="d-inline-flex gap-2 mb-5">
-            <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-              Call to action
-              <svg class="bi ms-2" width="24" height="24">
-                <use xlink:href="#arrow-right-short"></use>
-              </svg>
+          <a href="mailto:maritzel2401@gmail.com&subject=Contacto%20Portafolio&body=Buen%20día,%20estoy%20interesad@%20en%20tu%20trabajo." target="_top">
+            <button id="boton_contacto" class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+              Mail
             </button>
-            <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
-              Secondary link
-            </button>
-          </div>
+          </a>
         </div>
       </div>
     </section>
+    
   </main>
   <!--PARA EL FINAL-->
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
-  </footer>
+  <footer class="footer">
+    <div class="footer-content">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="https://github.com/yeyaMI17" class="nav-link px-2"> <i class="bi bi-github"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2"> <i class="bi bi-linkedin"></i></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/mar%C3%ADa-c-81772b304/" class="nav-link px-2"> <i class="bi bi-gitlab"></i></a></li>
+      </ul>
+      <p class="text-center">Creado por María en el bootcamp de <a href="https://tecnolochicas.mx">Tecnolochicas PRO</a></p>
+    </div>
+
 
 
   <!--SCRIPT BOOTSTRAP-->
-   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!--PARA EL COLOR DE LOS LINKS-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.nav-item a');
+      const homeLink = document.querySelector('.nav-item a[aria-current="page"]'); // Suponiendo que "Inicio" tiene aria-current="page"
 
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          // Restablecer el color de todos los enlaces excepto "Inicio"
+          links.forEach(l => {
+            if (l !== homeLink) {
+              l.style.color = '';
+            }
+          });
 
-
-
-
-    
-
-<!--PARA EL COLOR DE LOS LINKS-->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.nav-item a');
-    const homeLink = document.querySelector('.nav-item a[aria-current="page"]'); // Suponiendo que "Inicio" tiene aria-current="page"
-
-    links.forEach(link => {
-      link.addEventListener('click', function () {
-        // Restablecer el color de todos los enlaces excepto "Inicio"
-        links.forEach(l => {
-          if (l !== homeLink) {
-            l.style.color = '';
+          // Cambiar el color del enlace visitado excepto "Inicio"
+          if (this !== homeLink) {
+            this.style.color = 'rgb(255, 226, 63)'; // Color para enlace visitado
           }
         });
+      });
 
-        // Cambiar el color del enlace visitado excepto "Inicio"
-        if (this !== homeLink) {
-          this.style.color = 'rgb(255, 226, 63)'; // Color para enlace visitado
+      window.addEventListener('scroll', function () {
+        // Comprobar si el usuario está en la parte superior de la página
+        if (window.scrollY === 0) {
+          // Restablecer el color de todos los enlaces excepto "Inicio"
+          links.forEach(l => {
+            if (l !== homeLink) {
+              l.style.color = '';
+            }
+          });
         }
       });
     });
+  </script>
+  <!--SCRIPT PARA QUE SE VEAN BONITOS LOS ENCABEZADOS-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var header = document.querySelector('#header'); // Selecciona el encabezado
+      var headerHeight = header ? header.offsetHeight : 0;
 
-    window.addEventListener('scroll', function () {
-      // Comprobar si el usuario está en la parte superior de la página
-      if (window.scrollY === 0) {
-        // Restablecer el color de todos los enlaces excepto "Inicio"
-        links.forEach(l => {
-          if (l !== homeLink) {
-            l.style.color = '';
-          }
-        });
-      }
-    });
-  });
-</script>
+      // Función para desplazarse a una sección con ajuste
+      function scrollToSection(event) {
+        event.preventDefault();
+        var targetId = this.getAttribute('href').substring(1); // Obtiene el ID de destino
+        var targetElement = document.getElementById(targetId);
 
-
-<!--SCRIPT PARA QUE SE VEAN BONITOS LOS ENCABEZADOS-->
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var header = document.querySelector('#header'); // Selecciona el encabezado
-    var headerHeight = header ? header.offsetHeight : 0;
-
-    // Función para desplazarse a una sección con ajuste
-    function scrollToSection(event) {
-      event.preventDefault();
-      var targetId = this.getAttribute('href').substring(1); // Obtiene el ID de destino
-      var targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        var offsetPosition = targetElement.offsetTop - headerHeight - 77; // Ajusta 20 a la distancia deseada
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    }
-
-    // Añade el evento click a los enlaces de navegación
-    var navLinks = document.querySelectorAll('a[href^="#"]');
-    navLinks.forEach(function(link) {
-      link.addEventListener('click', scrollToSection);
-    });
-
-    // Ajustar el desplazamiento al recargar la página en un ancla
-    function adjustScrollOnLoad() {
-      var hash = window.location.hash.substring(1); // Obtiene el hash de la URL
-      if (hash) {
-        var targetElement = document.getElementById(hash);
         if (targetElement) {
           var offsetPosition = targetElement.offsetTop - headerHeight - 77; // Ajusta 20 a la distancia deseada
           window.scrollTo({
             top: offsetPosition,
-            behavior: 'auto' // Auto para el ajuste inicial
+            behavior: 'smooth'
           });
         }
       }
-    }
 
-    // Ajusta el desplazamiento al cargar la página
-    window.addEventListener('load', adjustScrollOnLoad);
-  });
-</script>
+      // Añade el evento click a los enlaces de navegación
+      var navLinks = document.querySelectorAll('a[href^="#"]');
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', scrollToSection);
+      });
 
-    
+      // Ajustar el desplazamiento al recargar la página en un ancla
+      function adjustScrollOnLoad() {
+        var hash = window.location.hash.substring(1); // Obtiene el hash de la URL
+        if (hash) {
+          var targetElement = document.getElementById(hash);
+          if (targetElement) {
+            var offsetPosition = targetElement.offsetTop - headerHeight - 77; // Ajusta 20 a la distancia deseada
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'auto' // Auto para el ajuste inicial
+            });
+          }
+        }
+      }
+
+      // Ajusta el desplazamiento al cargar la página
+      window.addEventListener('load', adjustScrollOnLoad);
+    });
+  </script>
 </body>
-
 </html>
